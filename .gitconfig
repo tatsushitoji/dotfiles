@@ -1,0 +1,9 @@
+[user]
+	name = Tatsushi Toji
+	email = 28854043+tatsushitoji@users.noreply.github.com
+[github]
+	user = tatsushitoji
+[ghq]
+	root = ~/ghq
+[credential]
+	helper = osxkeychain
