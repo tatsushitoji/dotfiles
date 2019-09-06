@@ -9,12 +9,11 @@ source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
 (( ${+_comps} )) && _comps[zplugin]=_zplugin
 zplugin load momo-lab/zsh-abbrev-alias
-zplugin ice wait'!0'; zplugin load zsh-users/zsh-syntax-highlighting
-zplugin ice wait'!0'; zplugin load zsh-users/zsh-completions
-zplugin ice wait'!0'; zplugin load zsh-users/zsh-autosuggestions
+zplugin load denysdovhan/spaceship-zsh-theme
+zplugin load zsh-users/zsh-syntax-highlighting
+zplugin load zsh-users/zsh-completions
+zplugin load zsh-users/zsh-autosuggestions
 
 # zplugin ice pick'async.zsh' src'pure.zsh'
 # zplugin light sindresorhus/pure
 
-zplugin ice pick'spaceship.zsh' wait'!0'
-zplugin light 'denysdovhan/spaceship-zsh-theme'
