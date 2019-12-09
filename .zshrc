@@ -4,6 +4,7 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
+export PATH="/usr/local/opt/openssl/bin:$PATH"
 
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
