@@ -14,6 +14,7 @@ zplugin load denysdovhan/spaceship-zsh-theme
 zplugin load zsh-users/zsh-syntax-highlighting
 zplugin load zsh-users/zsh-completions
 zplugin load zsh-users/zsh-autosuggestions
+zplugin load migutw42/zsh-fzf-ghq
 
 # zplugin ice pick'async.zsh' src'pure.zsh'
 # zplugin light sindresorhus/pure
