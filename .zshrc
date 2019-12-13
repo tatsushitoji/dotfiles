@@ -19,3 +19,6 @@ zplugin load migutw42/zsh-fzf-ghq
 # zplugin ice pick'async.zsh' src'pure.zsh'
 # zplugin light sindresorhus/pure
 
+# asdf
+. /usr/local/opt/asdf/asdf.sh
+. /usr/local/opt/asdf/etc/bash_completion.d/asdf.bash
