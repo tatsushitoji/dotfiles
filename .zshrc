@@ -1,24 +1,25 @@
-export NVM_DIR="$HOME/.nvm"
-  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
-  [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+# export NVM_DIR="$HOME/.nvm"
+#   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"
+#   [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"
+
+# asdf
+. /usr/local/opt/asdf/asdf.sh
 
 export PATH="/usr/local/opt/ncurses/bin:$PATH"
 export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
 export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-source "$HOME/.zplugin/bin/zplugin.zsh"
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
-zplugin load momo-lab/zsh-abbrev-alias
-zplugin load denysdovhan/spaceship-zsh-theme
-zplugin load zsh-users/zsh-syntax-highlighting
-zplugin load zsh-users/zsh-completions
-zplugin load zsh-users/zsh-autosuggestions
-zplugin load migutw42/zsh-fzf-ghq
+source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
+zinit load momo-lab/zsh-abbrev-alias
+# zinit load denysdovhan/spaceship-zsh-theme
+zinit load zsh-users/zsh-syntax-highlighting
+zinit load zsh-users/zsh-completions
+zinit load zsh-users/zsh-autosuggestions
+zinit load migutw42/zsh-fzf-ghq
 
-# zplugin ice pick'async.zsh' src'pure.zsh'
-# zplugin light sindresorhus/pure
+zinit ice pick'async.zsh' src'pure.zsh'
+zinit light sindresorhus/pure
 
-# asdf
-. /usr/local/opt/asdf/asdf.sh
-
+### End of Zinit's installer chunk
