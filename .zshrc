@@ -23,3 +23,4 @@ zinit ice pick'async.zsh' src'pure.zsh'
 zinit light sindresorhus/pure
 
 ### End of Zinit's installer chunk
+export PATH="/usr/local/opt/gettext/bin:$PATH"
