@@ -4,4 +4,4 @@ dockutil --no-restart --remove all
 
 killall Dock
 
-echo "Success! Dock is seted."
+echo "Success! Dock cleaning is finished."
