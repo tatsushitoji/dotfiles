@@ -1,6 +1,19 @@
 ## env
 export LANG=ja_JP.UTF-8
 
+## brew
+if [ "$(uname -m)" = "arm64" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  export PATH="/opt/homebrew/bin:$PATH"
+
+  . /opt/homebrew/opt/asdf/libexec/asdf.sh
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+
+  export ASDF_DATA_DIR=~/.asdf_x86
+  . /usr/local/opt/asdf/libexec/asdf.sh
+fi
+
 ## completion
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
@@ -25,7 +38,7 @@ export SAVEHIST=10000
 setopt hist_ignore_dups
 
 ## asdf
-. /usr/local/opt/asdf/asdf.sh
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zi.zsh ]]; then
