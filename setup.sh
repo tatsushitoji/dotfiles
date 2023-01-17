@@ -3,15 +3,13 @@
 . brew.sh
 . dock.sh
 
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh)"
-
-DOT_FILES=(.bashrc .zshrc .gitconfig .asdfrc .hushlogin)
+DOT_FILES=(.zprofile .gitconfig .asdfrc .hushlogin)
 
 for file in ${DOT_FILES[@]}
 
 do
-	ln -sf $HOME/dotfiles/$file $HOME/$file
-	echo "シンボリックリンクを貼りました: $file"
+  ln -sf $HOME/dotfiles/$file $HOME/$file
+  echo "placed symlink: $file"
 done
 
 echo "Success! setup is finished."
