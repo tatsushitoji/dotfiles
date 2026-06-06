@@ -1,9 +1,9 @@
 #!/bin/bash
 
-. brew.sh
+# . brew.sh
 . dock.sh
 
-DOT_FILES=(.zprofile .gitconfig .asdfrc .hushlogin)
+DOT_FILES=(.zprofile .zshrc .gitconfig .hushlogin)
 
 for file in ${DOT_FILES[@]}
 
